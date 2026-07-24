@@ -1,0 +1,5 @@
+{
+  "id": "guardrail-enforcement",
+  "type": "agent-skill",
+  "description": "Guardrail Enforcement"
+}

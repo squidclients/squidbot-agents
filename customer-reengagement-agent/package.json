@@ -1,0 +1,14 @@
+{
+  "name": "squidbot-customer-reengagement-agent",
+  "version": "0.1.0",
+  "description": "Guides Boardroom members through their First Win. Gets seasoned with brand voice and offer details. Selects the right campaign template from the swipe library (past customer, old lead, previous quote, etc.), customizes it into a full 5-stage SMS + email bundle, pushes templates to GHL, creates/seeds the GHL AI Agent with brand voice and reply scripts, and checks in weekly with a performance report. Assumes list is already clean and segmented upstream.",
+  "main": "src/agent.cjs",
+  "scripts": {
+    "test": "node --test 'test/**/*.test.cjs'",
+    "dry-run": "node src/agent.cjs --dry-run"
+  },
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  }
+}

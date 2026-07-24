@@ -1,0 +1,34 @@
+[
+  {
+    "id": "cust_001",
+    "name": "Maya Chen",
+    "email": "maya@example.com",
+    "service": "monthly chiropractic care plan",
+    "lastPurchaseAt": "2025-09-02",
+    "lastContactAt": "2025-10-10",
+    "lifetimeValue": 4200,
+    "purchaseCount": 8,
+    "tags": ["vip", "repeat"]
+  },
+  {
+    "id": "cust_002",
+    "name": "Jordan Smith",
+    "phone": "+15555550102",
+    "service": "massage therapy package",
+    "lastPurchaseAt": "2025-12-01",
+    "lastContactAt": "2026-01-15",
+    "lifetimeValue": 920,
+    "purchaseCount": 3,
+    "tags": ["repeat"]
+  },
+  {
+    "id": "cust_003",
+    "name": "Avery Patel",
+    "email": "avery@example.com",
+    "service": "initial consultation",
+    "lastPurchaseAt": "2026-04-20",
+    "lifetimeValue": 150,
+    "purchaseCount": 1,
+    "tags": []
+  }
+]

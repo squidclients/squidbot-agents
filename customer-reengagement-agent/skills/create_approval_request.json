@@ -1,0 +1,5 @@
+{
+  "id": "create_approval_request",
+  "type": "approval",
+  "description": "Create an approval request instead of taking risky external action."
+}

@@ -1,0 +1,5 @@
+{
+  "id": "thread-context-reply-gating-only-respond-to-campaign-thread-replies",
+  "type": "agent-skill",
+  "description": "Thread-Context Reply Gating (only respond to campaign-thread replies)"
+}

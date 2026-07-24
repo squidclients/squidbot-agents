@@ -1,0 +1,27 @@
+{
+  "agents": {
+    "listEntry": {
+      "id": "customer-reengagement",
+      "workspace": "<ABSOLUTE_PATH_TO_CUSTOMER_REENGAGEMENT_REPO>",
+      "model": {
+        "primary": "zai/glm-5.1"
+      },
+      "memorySearch": {
+        "extraPaths": [
+          "<CLIENT_WORKSPACE>/MEMORY.md",
+          "<CLIENT_WORKSPACE>/memory"
+        ]
+      }
+    }
+  },
+  "skills": {
+    "load": {
+      "extraDirsEntry": "<ABSOLUTE_PATH_TO_CUSTOMER_REENGAGEMENT_REPO>"
+    }
+  },
+  "verification": [
+    "openclaw skills",
+    "openclaw agents list --bindings"
+  ],
+  "note": "Installation is incomplete until BOTH skills.load.extraDirs and agents.list include this repo."
+}

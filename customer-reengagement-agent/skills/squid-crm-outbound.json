@@ -1,0 +1,13 @@
+{
+  "id": "squid-crm-outbound",
+  "name": "Squid CRM Outbound",
+  "description": "Submit approved customer re-engagement messages to Squid CRM for outbound delivery.",
+  "riskLevel": "high",
+  "requiresApproval": true,
+  "writesExternally": true,
+  "safety": [
+    "Only approved opportunities may be submitted",
+    "Dry-run by default during local testing",
+    "Never bypass unsubscribe or do-not-contact tags"
+  ]
+}

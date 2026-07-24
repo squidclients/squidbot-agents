@@ -1,0 +1,5 @@
+{
+  "id": "ghl-conversations-api-polling",
+  "type": "agent-skill",
+  "description": "GHL Conversations API Polling"
+}

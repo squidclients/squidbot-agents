@@ -1,0 +1,5 @@
+{
+  "id": "tag-gated-segmentation-reactivation-live-tag-filter",
+  "type": "agent-skill",
+  "description": "Tag-Gated Segmentation (reactivation-live tag filter)"
+}

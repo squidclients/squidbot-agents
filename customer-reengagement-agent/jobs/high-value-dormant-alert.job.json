@@ -1,0 +1,24 @@
+{
+  "id": "high-value-dormant-alert",
+  "name": "High-Value Dormant Customer Alert",
+  "description": "Surface high-value dormant customers for owner review.",
+  "schedule": "0 9 * * *",
+  "triggers": [
+    "high value dormant",
+    "vip win-back"
+  ],
+  "riskLevel": "medium",
+  "requiresApproval": true,
+  "subagents": [
+    "context-reader",
+    "risk-checker"
+  ],
+  "skills": [
+    "read_dashboard_context",
+    "dashboard-reporting",
+    "check_approval_rules",
+    "create_approval_request",
+    "safe-execution",
+    "squid-crm-outbound"
+  ]
+}

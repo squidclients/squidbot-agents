@@ -1,0 +1,17 @@
+{
+  "customer-reengagement": {
+    "enabled": false,
+    "jobs": [
+      {
+        "name": "Conversation Poller",
+        "schedule": "every 5 minutes",
+        "description": "Polls GHL Conversations API for new replies. Filters by: contact has reactivation-live tag, contact lacks exit tags (booking-made, do-not-contact, not-interested, campaign-complete), AND the reply is threaded to a campaign outbound message (not a random inbound). Reads context, crafts brand-voice response, sends via Conversations API. Enforces all 12 guardrails."
+      },
+      {
+        "name": "Weekly Performance Report",
+        "schedule": "weekly",
+        "description": "Pull GHL campaign stats, compare week-over-week and across multiple campaigns, generate performance summary with tweak recommendations."
+      }
+    ]
+  }
+}

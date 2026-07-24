@@ -1,0 +1,23 @@
+{
+  "id": "weekly-performance-report",
+  "name": "Weekly Performance Report",
+  "type": "scheduled",
+  "schedule": "weekly",
+  "ownerAgent": "customer-reengagement",
+  "triggers": [
+    "Weekly Performance Report"
+  ],
+  "subagents": [
+    "context-reader",
+    "work-planner",
+    "risk-checker"
+  ],
+  "skills": [
+    "read_dashboard_context",
+    "template-library-management-9-swipe-campaigns",
+    "check_approval_rules"
+  ],
+  "riskLevel": "low",
+  "requiresApproval": false,
+  "description": "Pull GHL campaign stats, compare week-over-week and across multiple campaigns, generate performance summary with tweak recommendations."
+}

@@ -1,0 +1,24 @@
+{
+  "id": "customer-reengagement-on-demand",
+  "name": "Customer Re-engagement Agent On-Demand Job",
+  "type": "on-demand",
+  "ownerAgent": "customer-reengagement",
+  "triggers": [
+    "customer re-engagement agent",
+    "first win campaign strategist — designs reactivation campaigns, generates templates, and watches for replies"
+  ],
+  "subagents": [
+    "context-reader",
+    "work-planner",
+    "risk-checker"
+  ],
+  "skills": [
+    "read_dashboard_context",
+    "template-library-management-9-swipe-campaigns",
+    "check_approval_rules",
+    "create_approval_request"
+  ],
+  "riskLevel": "medium",
+  "requiresApproval": true,
+  "description": "Norm-routed on-demand job for Customer Re-engagement Agent."
+}

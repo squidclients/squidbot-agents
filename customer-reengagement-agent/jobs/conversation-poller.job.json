@@ -1,0 +1,23 @@
+{
+  "id": "conversation-poller",
+  "name": "Conversation Poller",
+  "type": "scheduled",
+  "schedule": "every 5 minutes",
+  "ownerAgent": "customer-reengagement",
+  "triggers": [
+    "Conversation Poller"
+  ],
+  "subagents": [
+    "context-reader",
+    "work-planner",
+    "risk-checker"
+  ],
+  "skills": [
+    "read_dashboard_context",
+    "template-library-management-9-swipe-campaigns",
+    "check_approval_rules"
+  ],
+  "riskLevel": "low",
+  "requiresApproval": false,
+  "description": "Polls GHL Conversations API for new replies. Filters by: contact has reactivation-live tag, contact lacks exit tags (booking-made, do-not-contact, not-interested, campaign-complete), AND the reply is threaded to a campaign outbound message (not a random inbound). Reads context, crafts brand-voice response, sends via Conversations API. Enforces all 12 guardrails."
+}

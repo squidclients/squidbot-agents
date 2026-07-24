@@ -1,0 +1,26 @@
+{
+  "id": "weekly-reactivation-scan",
+  "name": "Weekly Reactivation Scan",
+  "description": "Weekly scan for dormant customer win-back opportunities.",
+  "schedule": "0 10 * * 1",
+  "triggers": [
+    "weekly reactivation",
+    "weekly win-back"
+  ],
+  "riskLevel": "medium",
+  "requiresApproval": true,
+  "subagents": [
+    "context-reader",
+    "work-planner",
+    "risk-checker"
+  ],
+  "skills": [
+    "read_dashboard_context",
+    "dashboard-reporting",
+    "readiness-checks",
+    "check_approval_rules",
+    "create_approval_request",
+    "safe-execution",
+    "squid-crm-outbound"
+  ]
+}
