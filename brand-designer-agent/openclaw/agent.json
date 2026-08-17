@@ -1,0 +1,23 @@
+{
+  "id": "brand-designer",
+  "name": "Brand Designer",
+  "type": "squidbot-agent",
+  "department": "growth",
+  "description": "Brand Designer performs safe, reviewable work for the growth department.",
+  "entrypoint": "node src/agent.cjs",
+  "commands": {
+    "run": "node src/agent.cjs",
+    "dryRun": "node src/agent.cjs --dry-run",
+    "test": "npm test"
+  },
+  "safety": {
+    "defaultMode": "dry-run-friendly",
+    "requiresApprovalFor": [
+      "external messages",
+      "publishing",
+      "financial actions",
+      "destructive changes"
+    ],
+    "reportsToDashboard": true
+  }
+}

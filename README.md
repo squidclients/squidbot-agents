@@ -7,6 +7,12 @@ Specialist agent definitions for SquidBot deployments. Each agent has:
 - `TOOLS.md` — tool-specific notes
 - `MEMORY.md` — long-term memory (template)
 
+## Brand Designer
+
+- `brand-designer-agent/` — installable, unseasoned SquidBot agent
+- `brand-designer-code-edition/` — Codex/Claude Code workflow with a pluggable image-provider adapter
+- `training/` — MET-based training outlines pending presentation approval
+
 ## Agent Categories
 - **Base** — Builder, Memory (ship with every install)
 - **Growth** — Blog, SEO, Newsletter, Social Media

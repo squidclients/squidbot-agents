@@ -1,0 +1,15 @@
+{
+  "name": "squidbot-brand-designer-agent",
+  "version": "0.1.0",
+  "description": "Brand Designer performs safe, reviewable work for the growth department.",
+  "main": "src/agent.cjs",
+  "scripts": {
+    "test": "node --test 'test/**/*.test.cjs'",
+    "dry-run": "node src/agent.cjs --dry-run",
+    "doctor": "node src/doctor.cjs"
+  },
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  }
+}

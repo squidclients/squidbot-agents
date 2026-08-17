@@ -1,0 +1,5 @@
+{
+  "id": "readiness-checks",
+  "type": "agent-skill",
+  "description": "Readiness Checks"
+}

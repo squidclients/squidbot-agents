@@ -1,0 +1,16 @@
+{
+  "brand-designer": {
+    "enabled": true,
+    "department": "growth",
+    "name": "Brand Designer",
+    "role": "Brand Designer",
+    "description": "Brand Designer performs safe, reviewable work for the growth department.",
+    "skills": [
+      "Dashboard Reporting",
+      "Readiness Checks",
+      "Safe Execution"
+    ],
+    "schedule": "on-demand",
+    "ready": false
+  }
+}

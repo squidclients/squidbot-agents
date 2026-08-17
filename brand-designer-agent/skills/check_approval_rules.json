@@ -1,0 +1,5 @@
+{
+  "id": "check_approval_rules",
+  "type": "safety",
+  "description": "Check whether the job requires owner approval."
+}

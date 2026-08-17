@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Brand Designer Report",
+  "type": "object",
+  "required": [
+    "agentId",
+    "status",
+    "summary"
+  ],
+  "properties": {
+    "agentId": {
+      "const": "brand-designer"
+    },
+    "status": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "metrics": {
+      "type": "object"
+    }
+  }
+}

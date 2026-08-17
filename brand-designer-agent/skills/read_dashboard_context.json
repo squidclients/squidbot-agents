@@ -1,0 +1,5 @@
+{
+  "id": "read_dashboard_context",
+  "type": "read",
+  "description": "Read dashboard context needed for the job."
+}

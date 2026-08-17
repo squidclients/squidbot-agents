@@ -1,0 +1,13 @@
+{
+  "brandName": "Example Company",
+  "website": "https://example.com",
+  "audience": [],
+  "offers": [],
+  "brandWords": [],
+  "avoidWords": [],
+  "inspiration": [{ "url": "", "reason": "" }],
+  "dislikedExamples": [{ "url": "", "reason": "" }],
+  "assetFiles": [],
+  "approver": "",
+  "approvedAt": null
+}

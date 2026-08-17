@@ -1,0 +1,24 @@
+{
+  "id": "brand-designer-on-demand",
+  "name": "Brand Designer On-Demand Job",
+  "type": "on-demand",
+  "ownerAgent": "brand-designer",
+  "triggers": [
+    "brand designer",
+    "brand designer"
+  ],
+  "subagents": [
+    "context-reader",
+    "work-planner",
+    "risk-checker"
+  ],
+  "skills": [
+    "read_dashboard_context",
+    "dashboard-reporting",
+    "check_approval_rules",
+    "create_approval_request"
+  ],
+  "riskLevel": "medium",
+  "requiresApproval": true,
+  "description": "Norm-routed on-demand job for Brand Designer."
+}
