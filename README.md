@@ -10,8 +10,7 @@ Specialist agent definitions for SquidBot deployments. Each agent has:
 ## Brand Designer
 
 - `brand-designer-agent/` — installable, unseasoned SquidBot agent
-- `brand-designer-code-edition/` — Codex/Claude Code workflow with a pluggable image-provider adapter
-- `training/` — MET-based training outlines pending presentation approval
+- `training/brand-designer-squidbot-outline.md` — paid-customer MET training outline pending presentation approval
 
 ## Agent Categories
 - **Base** — Builder, Memory (ship with every install)
