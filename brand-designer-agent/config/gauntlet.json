@@ -1,0 +1,104 @@
+{
+  "version": "1.0.0",
+  "defaultMode": "gauntlet",
+  "modes": {
+    "deterministic-transform": {
+      "enabled": true,
+      "description": "Deterministic QA-only path for purely mechanical transformations of already-approved art: resize, format conversion, compression, exact crop, and exact export.",
+      "deterministicGate": {
+        "required": true,
+        "minimumContrastRatio": 4.5,
+        "requireApprovedLogoAssets": true,
+        "requireActualArtifact": true,
+        "requirePaletteTokens": true,
+        "requireTypographyTokens": true,
+        "requireSafeZones": true,
+        "requireDimensions": true,
+        "requireSpellingPass": true,
+        "requireCroppingPass": true,
+        "requirePlatformSpecPass": true
+      }
+    },
+    "gauntlet": {
+      "enabled": true,
+      "description": "Default bounded three-critic loop for all original brand design and creative generation.",
+      "maxRounds": 2,
+      "absoluteMaxRounds": 3,
+      "perRunTokenBudget": 45000,
+      "perRoundTokenBudget": 15000,
+      "estimatedTokens": {
+        "criticCall": 1600,
+        "revisionCall": 3500
+      },
+      "builderModel": "openai/gpt-5.5",
+      "criticModel": "openai/gpt-5.5",
+      "criticFallbackModel": "openai/gpt-5.5-mini",
+      "rasterModel": "openai/gpt-image-2",
+      "approvalStatus": "awaiting-approval",
+      "keepBestCandidate": true,
+      "passThreshold": 4.2,
+      "minimumCategoryFloors": {
+        "briefFit": 4,
+        "designQuality": 4,
+        "visualImpact": 4
+      },
+      "scoreWeights": {
+        "briefFit": 0.34,
+        "designQuality": 0.33,
+        "visualImpact": 0.33
+      },
+      "stopConditions": [
+        "pass",
+        "budget-exhausted",
+        "non-improvement",
+        "oscillation",
+        "repeated-criticism",
+        "max-rounds"
+      ],
+      "referencePolicy": {
+        "minApprovedReferences": 0,
+        "maxApprovedReferences": 3,
+        "maxSimilarityToSingleReference": 0.82,
+        "requireProvenance": true,
+        "comparisonPurpose": "Quality bar only; never clone layout, likeness, or protected trade dress."
+      },
+      "deterministicGate": {
+        "required": true,
+        "minimumContrastRatio": 4.5,
+        "requireApprovedLogoAssets": true,
+        "requireActualArtifact": true,
+        "requirePaletteTokens": true,
+        "requireTypographyTokens": true,
+        "requireSafeZones": true,
+        "requireDimensions": true,
+        "requireSpellingPass": true,
+        "requireCroppingPass": true,
+        "requirePlatformSpecPass": true
+      }
+    },
+    "hero": {
+      "extends": "gauntlet",
+      "description": "Alias for the default gauntlet path when a major first-impression asset needs hero-level handling."
+    }
+  },
+  "critics": [
+    {
+      "id": "brief-fit",
+      "name": "Brief Fit Critic",
+      "scoreKey": "briefFit",
+      "prompt": "prompts/critics/brief-fit.md"
+    },
+    {
+      "id": "design-quality",
+      "name": "Design Quality Critic",
+      "scoreKey": "designQuality",
+      "prompt": "prompts/critics/design-quality.md"
+    },
+    {
+      "id": "visual-impact",
+      "name": "Visual Impact Critic",
+      "scoreKey": "visualImpact",
+      "prompt": "prompts/critics/visual-impact.md"
+    }
+  ]
+}
